@@ -1,0 +1,14 @@
+A HTML5 website using JavaScript and JQuery to play games.
+
+1. Shark Adventure:
+Move the shark across the screen in any direction you choose.  The goal is to make the shark swim to the treasure at the bottom of the sea, dodging various sea creatures.
+
+2. Memory Game:
+Test your memory in this game by flipping over cards with various images of fictional characters.  Work to get a faster time in this memory game.  Be mindful of the time limit count down.
+
+3. Interactive story:
+You choose the actions you take in this short choice based, adventure game.  Depending on your choices, they can lead to different outcomes throughout your adventure. 
+
+Copyright: Jacob Sternhagen
+Created: March 11th, 2024
+Last Update: March 14th, 2024
