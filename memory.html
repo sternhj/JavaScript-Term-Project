@@ -1,0 +1,231 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="css/mem.css" rel="stylesheet">
+    <script src="js/mem.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+    <title>Character Memory Game</title>
+</head>
+<body>
+    <h1>Character Memory Game</h1>
+    <!--Screens for game over, win and start of game-->
+    <div class="overlay visible">
+        Click to Start
+       <span class="overlay-small"><a href="memory.txt" id="readme">Read Me</a></span>
+    </div>
+    <div id="game-over" class="overlay">
+        GAME OVER
+        <span class="overlay-small">Click to Restart</span>
+    </div>
+    <div id="victory" class="overlay">
+        VICTORY
+        <span class="overlay-small">Click to Restart</span>
+    </div>
+    <!--Game screen-->
+    <div class="game-container">
+        <div class="game-info-container">
+            <div class="game-info">
+                Time <span id="time-remaining">100</span>
+            </div>
+            <div class="game-info">
+                Flips <span id="flips">0</span>
+            </div>
+        </div>
+        <div class="card">
+            <!--Back of the card-->
+            <div class="card-back card-face">
+                <img class="glass" src="media/Mglass.webp">
+            </div>
+            <!--Content of the card-->
+            <div class="card-front card-face">
+                <img class="character" src="media/luffy.jpg">
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-back card-face">
+                <img class="glass" src="media/Mglass.webp">
+            </div>
+            <div class="card-front card-face">
+                <img class="character" src="media/luffy.jpg">
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-back card-face">
+                <img class="glass" src="media/Mglass.webp">
+            </div>
+            <div class="card-front card-face">
+                <img class="character" src="media/vader.jpg">
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-back card-face">
+                <img class="glass" src="media/Mglass.webp">
+            </div>
+            <div class="card-front card-face">
+                <img class="character" src="media/vader.jpg">
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-back card-face">
+                <img class="glass" src="media/Mglass.webp">
+            </div>
+            <div class="card-front card-face">
+                <img class="character" src="media/SH.jpg">
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-back card-face">
+                <img class="glass" src="media/Mglass.webp">
+            </div>
+            <div class="card-front card-face">
+                <img class="character" src="media/SH.jpg">
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-back card-face">
+                <img class="glass" src="media/Mglass.webp">
+            </div>
+            <div class="card-front card-face">
+                <img class="character" src="media/jSparrow.webp">
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-back card-face">
+                <img class="glass" src="media/Mglass.webp">
+            </div>
+            <div class="card-front card-face">
+                <img class="character" src="media/jSparrow.webp">
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-back card-face">
+                <img class="glass" src="media/Mglass.webp">
+            </div>
+            <div class="card-front card-face">
+                <img class="character" src="media/iJones.jpg">
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-back card-face">
+                <img class="glass" src="media/Mglass.webp">
+            </div>
+            <div class="card-front card-face">
+                <img class="character" src="media/iJones.jpg">
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-back card-face">
+                <img class="glass" src="media/Mglass.webp">
+            </div>
+            <div class="card-front card-face">
+                <img class="character" src="media/ke.jpg">
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-back card-face">
+                <img class="glass" src="media/Mglass.webp">
+            </div>
+            <div class="card-front card-face">
+                <img class="character" src="media/ke.jpg">
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-back card-face">
+                <img class="glass" src="media/Mglass.webp">
+            </div>
+            <div class="card-front card-face">
+                <img class="character" src="media/percy.jpg">
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-back card-face">
+                <img class="glass" src="media/Mglass.webp">
+            </div>
+            <div class="card-front card-face">
+                <img class="character" src="media/percy.jpg">
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-back card-face">
+                <img class="glass" src="media/Mglass.webp">
+            </div>
+            <div class="card-front card-face">
+                <img class="character" src="media/terminator.jpg">
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-back card-face">
+                <img class="glass" src="media/Mglass.webp">
+            </div>
+            <div class="card-front card-face">
+                <img class="character" src="media/terminator.jpg">
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-back card-face">
+                <img class="glass" src="media/Mglass.webp">
+            </div>
+            <div class="card-front card-face">
+                <img class="character" src="media/harryP.jpg">
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-back card-face">
+                <img class="glass" src="media/Mglass.webp">
+            </div>
+            <div class="card-front card-face">
+                <img class="character" src="media/harryP.jpg">
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-back card-face">
+                <img class="glass" src="media/Mglass.webp">
+            </div>
+            <div class="card-front card-face">
+                <img class="character" src="media/V.jpg">
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-back card-face">
+                <img class="glass" src="media/Mglass.webp">
+            </div>
+            <div class="card-front card-face">
+                <img class="character" src="media/V.jpg">
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-back card-face">
+                <img class="glass" src="media/Mglass.webp">
+            </div>
+            <div class="card-front card-face">
+                <img class="character" src="media/ken.png">
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-back card-face">
+                <img class="glass" src="media/Mglass.webp">
+            </div>
+            <div class="card-front card-face">
+                <img class="character" src="media/ken.png">
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-back card-face">
+                <img class="glass" src="media/Mglass.webp">
+            </div>
+            <div class="card-front card-face">
+                <img class="character" src="media/ash.jpg">
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-back card-face">
+                <img class="glass" src="media/Mglass.webp">
+            </div>
+            <div class="card-front card-face">
+                <img class="character" src="media/ash.jpg">
+            </div>
+        </div>
+    </div>
+</body>
+</html>

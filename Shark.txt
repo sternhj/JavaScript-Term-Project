@@ -1,0 +1,5 @@
+Welcome to Shark Adventure!
+This is a dodger style game, where the main objective is to control the shark avoiding the oncoming obstacles.
+Movement is based on your up, down, left, and right arrow keys.
+Survive longer to increase your overal score for the run.
+Work to better your time in each run!

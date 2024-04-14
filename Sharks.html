@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Shark Adventure</title>    
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+<style>
+    body{
+        background: linear-gradient(to right, black, darkblue, black);
+        background-repeat: repeat-y;
+        font-family: "Courgette", cursive;
+        font-size: 14pt;
+    }
+    h1{
+        text-align: center;
+        font-size: 4em;
+        color: 	skyblue;
+        text-shadow: 2px 1px darkcyan;
+    }
+    h2{
+        text-align: center;
+        font-size: 2em;
+        color: 	skyblue;
+        text-shadow: 2px 1px darkcyan;
+    }
+    button{
+        background-color: lightseagreen; 
+        border: 3px solid white;
+        padding: 1% 1%;
+        margin: 2px;
+        font-family: "Courgette", cursive;
+        font-size: 1em;
+        color: white;
+        text-align: center;
+        text-decoration: none;
+    }
+    button:hover{
+        background-color: darkcyan;
+        color: 	lightgreen;;
+    }
+
+    div{
+        width: 100%;
+        text-align: center;
+        margin-top: 2%;
+    }
+    canvas{
+        display: inline;
+        border: 10px double seagreen;
+    }
+    footer{
+        text-align: center;
+        margin-top: 2%;
+        color: seagreen;
+    }
+
+</style>
+</head>
+<body onload="startGame()">
+<h1>Fin's Shark Adventure</h1>
+<div id="canvasDiv">
+    <canvas id="myCanvas"> Your browser does not support the HTML5 canvas tag.</canvas>
+</div>
+<div>
+        <button id="playAgain" onclick="location=URL">Play Again</button>
+    </div>
+    <h2>Use your up, down, left, & right arrows to move Fin around the oncoming obstacles!</h2>
+<footer>Jacob Sternhagen &copy; </footer>
+<script src="js/Shark.js"></script>
+</body>
+</html>
