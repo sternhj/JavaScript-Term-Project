@@ -1,0 +1,145 @@
+*{
+    box-sizing:border-box;
+}
+html{
+    min-height: 100vh;
+}
+body {
+    margin: 0;
+   background-image: url('../media/cinema.jpg');
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-color: black;
+}
+h1 {
+    font-family: "Courgette", cursive;
+    color: white;
+    text-align: center;
+    text-shadow: 2px 2px red;
+    font-size: 6em;
+}
+.game-info-container {
+    grid-column: 1 / -1;
+    display: flex;
+    justify-content: space-between;
+}
+.game-info{
+    color:white;
+    font-family: "Courgette", cursive;
+    font-size:2em;
+    text-shadow: 1px 1px red;
+}
+.game-container {
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: repeat(6, auto);
+    grid-gap: 10px;
+    justify-content: center;
+    perspective: 500px;
+}
+.card{
+    position:relative;
+    background-color:black;
+    height:175px;
+    width:125px;
+    border-color:whitesmoke;
+}
+.card-face {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+    border-width: 1px;
+    border-style: solid;
+    overflow: hidden;
+    transition: transform 500ms ease-in-out;
+    backface-visibility: hidden;
+}
+
+.card.visible .card-back {
+    transform: rotateY(-180deg);
+}
+
+.card.visible .card-front {
+    transform: rotateY(0);
+}
+
+@keyframes overlay-grow{
+    from{
+        background-color:rgba(0,0,0,0);
+        font-size:0;
+    }
+    to {
+        font-size: 10em;
+        background-color:rgba(0,0,0,.8);
+    }
+}
+.card-back{
+    background-color:red;
+    border-bottom-color:black;
+}
+.card-front{
+    transform: rotateY('180deg');
+}
+.glass{
+    width:75px;
+    height:75px;       
+}
+.character {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    transition: transform 100ms ease-in-out;
+    transform: scale(.9);
+}
+
+.card-front:hover .character {
+    transform: scale(1);
+}
+
+.card-front {
+    background-color: red;
+    border-color: black;
+    transform: rotateY(180deg);
+}
+
+.overlay {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 100;
+    display: none;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: red;
+    text-shadow: 1px 1px black;
+    font-family: "Courgette", cursive;
+    transition: background-color 500ms, font-size 500ms;
+}
+
+.overlay-small {
+    font-size: .3em;
+}
+
+.overlay.visible {
+    display: flex;
+    animation: overlay-grow 500ms forwards;
+}
+
+
+@media (max-width: 600px) {
+    .game-container {
+        grid-template-columns: repeat(2, auto)
+    }
+
+    .game-info-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
