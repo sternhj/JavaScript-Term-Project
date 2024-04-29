@@ -89,7 +89,7 @@ h1 {
     height:75px;       
 }
 .character {
-    height: 100%;
+    height:100%;
     width: 100%;
     position: relative;
     transition: transform 100ms ease-in-out;

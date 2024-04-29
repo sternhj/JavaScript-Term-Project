@@ -6,14 +6,20 @@ This is a dodger style game, where the main objective is to control the shark av
 Movement is based on your up, down, left, and right arrow keys.
 Survive longer to increase your overal score for the run.
 Work to better your time in each run!
+**AUDIO WARNING**
+Recomend turning your overall volume down, the background audio can be startlingly loud.
 
 2. Memory Game:
 Test your memory in this game by flipping over cards with various images of fictional characters.  
 Work to get a faster time in this memory game.  Be mindful of the time limit count down.
 
-3. Interactive story:
-You choose the actions you take in this short choice based, adventure game.  
-Depending on your choices, they can lead to different outcomes throughout your adventure. 
+3. Interactive Image Story:
+This is a Drag and drop image game, focused on building a story around a battle between monsters and humans.
+You choose the actions and positions of the moveable characters.  Deciding where you want the various troops positioned and determining who fights who.  
+Depending on your choices, they can lead to different outcomes throughout your creative adventure. 
+Who will have the advantage in positioning and what creative narratives will you come up with?
+**AUDIO WARNING**
+Recomend turning your overall volume down, the background audio can be startlingly loud.
 
 Copyright: Jacob Sternhagen
 Created: March 11th, 2024
