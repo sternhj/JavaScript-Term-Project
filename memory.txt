@@ -1,0 +1,4 @@
+Welcome to this Fictional Character inspired memory matching game.  
+The objective of this game is to match the image on the revealed cards to their corresponding match, in the given time limit. 
+Correct answers will leave the images revealed.  Incorrect choices will flip the cards back over.
+Test your memory in this game by flipping over cards with various images of fictional characters.  Work to get a faster time in this memory game.  Be mindful of the time limit count down.
